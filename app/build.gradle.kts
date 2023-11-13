@@ -19,7 +19,9 @@ android {
             useSupportLibrary = true
         }
     }
-
+    buildFeatures {
+        viewBinding = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -66,4 +68,11 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    implementation ("io.getstream:stream-chat-android-ui-components:6.0.2")
+    implementation ("io.getstream:stream-chat-android-offline:6.0.2")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation ("com.google.android.material:material:1.9.0")
+    implementation ("androidx.activity:activity-ktx:1.7.2")
+    implementation ("io.coil-kt:coil:2.4.0")
 }
